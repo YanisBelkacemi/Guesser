@@ -3,7 +3,14 @@ import keyboard
 import os
 from colorama import init
 from colorama import Fore
+
+
+
+
 #startup process and needed variables
+os.system('pip3 install keyboard')
+os.system('pip3 install colorama')
+
 init(autoreset=True)
 points = 0
 os.system('cls')
@@ -45,6 +52,11 @@ def inputs():
 	global inpu
 	inpu = input('what is this number : ')
 
+
+
+
+
+
 #calls th functions for the first time
 rando()
 guesser()
@@ -74,7 +86,10 @@ The right answer was : {num}
 		guesser()
 		inputs()
 
-# to keep the script
+
+
+
+# to keep the script running
 while True:
 	if keyboard.is_pressed('ctrl'):
 		if keyboard.is_pressed("q"):
